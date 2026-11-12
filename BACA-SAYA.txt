@@ -1,0 +1,96 @@
+WEBSITE CSSMoRA UNNES
+=====================
+Buka index.html di browser untuk melihat situs.
+
+STRUKTUR
+  index.html, sejarah.html, prestasi.html, galeri.html, karya.html
+  style.css   -> semua tampilan
+  script.js   -> semua perilaku (menu, filter, lightbox, modal, timeline)
+  foto/       -> gambar
+
+FOTO
+Semua gambar di folder foto/ sekarang masih PLACEHOLDER (kotak hijau/emas
+bertuliskan nama file). Ganti dengan foto asli memakai NAMA FILE YANG SAMA.
+  foto/logo.png, foto/hero.jpg, foto/tentang.jpg
+  foto/galeri/g1..g4.jpg
+  foto/prestasi/p1..p6.jpg
+  foto/karya/k1..k6.jpg
+  foto/anggota/<divisi>-1..4.jpg  (bph, PSDM, P3M, PSDE,
+                                    Kominfo, media, jejaring)
+
+MENGEDIT ISI
+  Data divisi & anggota -> <script> di bagian bawah index.html (window.DIVISI)
+  Timeline sejarah      -> <script> di bagian bawah sejarah.html (SEJARAH, KETUA)
+  Kartu prestasi/karya  -> langsung di prestasi.html dan karya.html
+
+PERBAIKAN DI VERSI INI
+  - Tombol menu mobile (burger/X) tidak lagi tertutup panel menu.
+  - Tombol X pada modal divisi tetap terlihat saat daftar anggota di-scroll.
+  - Kartu kembali naik saat di-hover.
+  - Tag HTML berlebih di galeri.html dibereskan.
+
+FOTO OTOMATIS MENYESUAIKAN (versi terbaru)
+  Foto beranda, Tentang Kami, galeri, prestasi, dan karya selalu tampil UTUH,
+  apa pun bentuknya (potret, lanskap, persegi, panorama). Ruang sisa diisi
+  versi blur dari foto yang sama, jadi tetap rapi. Tidak perlu mengatur apa pun,
+  cukup ganti file foto dengan nama yang sama.
+
+DETAIL PRESTASI
+  Data prestasi ada di SATU file: data-prestasi.js (judul, tahun, tingkat,
+  kategori, nama, prodi, foto, penjelasan, keterangan, tautan).
+  Beranda menampilkan 6 pertama; halaman Prestasi menampilkan semuanya.
+  Klik kartu / foto prestasi -> muncul jendela detail (HP & web).
+  Menambah prestasi: salin satu blok { ... } di data-prestasi.js, ubah id
+  (mis. 'p7'), isi datanya, dan taruh fotonya di foto/prestasi/.
+
+HERO BERANDA (foto penuh)
+  Foto hero memenuhi seluruh area di HP dan web.
+  - Atur bagian foto yang ingin tetap terlihat: ubah --fokus di style.css
+    (#home{--fokus:center 30%}). Contoh: "center 15%" lebih ke atas.
+  - Opsional: letakkan foto versi tegak/potret bernama foto/hero-hp.jpg,
+    otomatis dipakai di HP (jika tidak ada, HP memakai foto/hero.jpg).
+
+TEMA WARNA
+  Tema hijau-emas semula. Warna ada di bagian paling atas style.css (:root).
+
+DATA GALERI & DETAIL KEGIATAN
+  Data galeri foto ada di SATU file tersendiri: data-galeri.js (id, judul,
+  kategori, foto, deskripsi, tanggal).
+  - Beranda: background berupa kolase foto-foto yang saling bertumpuk dengan
+    overlay elegan, serta teks dan tombol "Lihat Galeri Lengkap" di tengah.
+  - Halaman Galeri: saat foto diklik, muncul jendela modal detail yang menampilkan
+    foto penuh, judul, kategori, tanggal kegiatan, serta penjelasan lengkap kegiatan.
+  - Filter kategori otomatis terhubung dan responsif di HP maupun desktop.
+
+TENTANG KAMI DENGAN VIDEO BACKGROUND
+  Bagian "Tentang Kami" di beranda menggunakan latar video profil
+  (vidio/profilcssmora.mp4) dengan overlay kontras tinggi dan teks di tengah.
+
+LOGIN & DASBOR PENGURUS
+  Tombol "Login" ada di navbar -> login.html -> admin.html.
+  Akun ada di config-admin.js (bawaan: admin / cssmora2026). GANTI sebelum diunggah.
+  Di dasbor: isi data Anggota, Prestasi, Galeri, dan Karya langsung lewat form
+  (foto bisa diunggah, otomatis dikecilkan). Data tersimpan di peramban.
+  Agar tampil di situs: klik "Unduh data untuk situs", lalu ganti
+  data-anggota.js, data-prestasi.js, data-karya.js, dan data-galeri.js di folder situs
+  dan unggah ulang ke hosting.
+  CATATAN KEAMANAN: situs ini statis (tanpa server), jadi login hanya
+  pembatas ringan. Jangan pakai kata sandi yang sama dengan akun lain.
+  Untuk login sungguhan dan data langsung tersimpan online, diperlukan layanan
+  server (mis. Firebase / Supabase / Google Sheets).
+
+HALAMAN ANGGOTA
+  anggota.html menampilkan semua anggota + filter divisi. Klik kartu untuk
+  melihat profil dan portofolio (prestasi/karya otomatis muncul bila nama
+  pada data prestasi/karya sama persis dengan nama anggota).
+
+DETAIL KARYA
+  Data karya ada di SATU file: data-karya.js. Klik kartu di halaman
+  Karya Awardee -> muncul penjelasan, keterangan, dan tampilan karya
+  (fotoLain: tangkapan layar aplikasi, halaman buku, hasil desain, dst.).
+  Menambah karya: salin satu blok { ... }, ubah id (mis. 'k7'), isi datanya.
+
+JIKA SUDAH MEMASANG FOTO ASLI
+  Jangan timpa folder foto/. Salin saja file-file kode:
+  semua file .html, style.css, script.js, admin.js, config-admin.js,
+  data-anggota.js, data-prestasi.js, data-karya.js.

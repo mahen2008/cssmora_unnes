@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#06382a" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Anggota & Portofolio — CSSMoRA UNNES</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="nav">
+      <a href="index.html" class="logo"
+        ><img src="foto/logo.png" alt="Logo CSSMoRA UNNES" /> CSSMoRA UNNES</a
+      >
+      <button class="burger" id="burger" aria-label="Menu">☰</button>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="index.html#about">Tentang</a></li>
+          <li><a href="sejarah.html">Sejarah</a></li>
+          <li><a href="prestasi.html">Prestasi</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="karya.html">Karya Awardee</a></li>
+          <li><a href="anggota.html">Anggota</a></li>
+          <li><a href="login.html" class="nav-login">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="sub">
+      <h1>Anggota &amp; Portofolio</h1>
+      <p>
+        Mengenal mahasantri CSSMoRA UNNES beserta prestasi dan karya mereka.
+      </p>
+    </section>
+    <section>
+      <div class="container">
+        <div class="filters rv" id="filter-anggota">
+          <button class="flt on" data-f="all">Semua</button>
+        </div>
+        <div class="cards cards-anggota" id="daftar-anggota"></div>
+      </div>
+    </section>
+    <footer>
+      <div class="foot">
+        <div>
+          <h4>CSSMoRA UNNES</h4>
+          <p>
+            Wadah pengembangan dan pengabdian bagi mahasantri penerima beasiswa
+            PBSB di Universitas Negeri Semarang.
+          </p>
+        </div>
+        <div>
+          <h4>Beranda</h4>
+          <ul>
+            <li><a href="index.html#about">Tentang</a></li>
+            <li><a href="prestasi.html">Prestasi</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="karya.html">Karya Awardee</a></li>
+            <li><a href="sejarah.html">Sejarah</a></li>
+            <li></li>
+            <a href="anggota.html">Anggota</a>
+          </ul>
+        </div>
+        <div>
+          <h4>Ikuti Kami</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">TikTok</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copy">Copyright © 2026 CSSMoRA UNNES</div>
+    </footer>
+    <div
+      class="mdl"
+      id="mdl-a"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Profil anggota"
+    >
+      <div class="mdl-box">
+        <button class="mdl-x" aria-label="Tutup">✕</button>
+        <div class="mdl-c"></div>
+      </div>
+    </div>
+    <script src="data-anggota.js"></script>
+    <script src="data-prestasi.js"></script>
+    <script src="data-karya.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

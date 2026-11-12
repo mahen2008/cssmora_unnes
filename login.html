@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#06382a" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login Pengurus — CSSMoRA UNNES</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <header id="nav">
+      <a href="index.html" class="logo"
+        ><img src="foto/logo.png" alt="Logo CSSMoRA UNNES" /> CSSMoRA UNNES</a
+      >
+      <button class="burger" id="burger" aria-label="Menu">☰</button>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="index.html#about">Tentang</a></li>
+          <li><a href="sejarah.html">Sejarah</a></li>
+          <li><a href="prestasi.html">Prestasi</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="karya.html">Karya Awardee</a></li>
+          <li><a href="anggota.html">Anggota</a></li>
+          <li><a href="login.html" class="nav-login">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="sub">
+      <h1>Login Pengurus</h1>
+      <p>Masuk untuk mengisi data anggota dan portofolio CSSMoRA UNNES.</p>
+    </section>
+    <section>
+      <div class="container">
+        <div class="login-box rv">
+          <form id="form-login" autocomplete="off">
+            <div class="fld">
+              <label for="u">Nama pengguna</label
+              ><input
+                id="u"
+                type="text"
+                autocomplete="off"
+                readonly
+                onfocus="this.removeAttribute('readonly')"
+                required
+              />
+            </div>
+            <div class="fld">
+              <label for="s">Kata sandi</label
+              ><input
+                id="s"
+                type="password"
+                autocomplete="new-password"
+                readonly
+                onfocus="this.removeAttribute('readonly')"
+                required
+              />
+            </div>
+            <p class="pesan" id="login-pesan" role="alert"></p>
+            <button class="btn" type="submit">Masuk</button>
+          </form>
+          <p class="catatan">Khusus pengurus CSSMoRA UNNES.</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="foot">
+        <div>
+          <h4>CSSMoRA UNNES</h4>
+          <p>
+            Wadah pengembangan dan pengabdian bagi mahasantri penerima beasiswa
+            PBSB di Universitas Negeri Semarang.
+          </p>
+        </div>
+        <div>
+          <h4>Beranda</h4>
+          <ul>
+            <li><a href="index.html#about">Tentang</a></li>
+            <li><a href="prestasi.html">Prestasi</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="karya.html">Karya Awardee</a></li>
+            <li><a href="sejarah.html">Sejarah</a></li>
+            <li></li>
+            <a href="anggota.html">Anggota</a>
+          </ul>
+        </div>
+        <div>
+          <h4>Ikuti Kami</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">TikTok</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copy">Copyright © 2026 CSSMoRA UNNES</div>
+    </footer>
+    <script src="config-admin.js"></script>
+    <script src="script.js"></script>
+    <script>
+      if (sessionStorage.getItem("css_login") === "1") {
+        location.replace("admin.html");
+      }
+
+      document
+        .getElementById("form-login")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const pengguna = document.getElementById("u").value.trim();
+          const sandi = document.getElementById("s").value;
+          const pesan = document.getElementById("login-pesan");
+
+          if (pengguna === ADMIN.pengguna && sandi === ADMIN.sandi) {
+            sessionStorage.setItem("css_login", "1");
+            location.href = "admin.html";
+          } else {
+            pesan.textContent = "Nama pengguna atau kata sandi salah.";
+          }
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#06382a" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dasbor Pengurus — CSSMoRA UNNES</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="robots" content="noindex" />
+    <script>
+      if (sessionStorage.getItem("css_login") !== "1")
+        location.replace("login.html");
+    </script>
+  </head>
+  <body>
+    <header id="nav">
+      <a href="index.html" class="logo"
+        ><img src="foto/logo.png" alt="Logo CSSMoRA UNNES" /> CSSMoRA UNNES</a
+      >
+      <button class="burger" id="burger" aria-label="Menu">☰</button>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="index.html#about">Tentang</a></li>
+          <li><a href="sejarah.html">Sejarah</a></li>
+          <li><a href="prestasi.html">Prestasi</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="karya.html">Karya Awardee</a></li>
+          <li><a href="anggota.html">Anggota</a></li>
+          <li><a href="login.html" class="nav-login">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="sub">
+      <h1>Dasbor Pengurus</h1>
+      <p>
+        Isi data anggota, prestasi, dan karya. Hasilnya diunduh lalu dipasang di
+        situs.
+      </p>
+    </section>
+    <section>
+      <div class="container">
+        <div class="adm-bar">
+          <span class="adm-status" id="adm-status"></span>
+          <span class="adm-aksi">
+            <button class="btn" id="btn-unduh-semua" type="button">
+              Unduh data untuk situs
+            </button>
+            <button class="btn-k" id="btn-keluar" type="button">Keluar</button>
+          </span>
+        </div>
+        <div class="filters" id="adm-tabs">
+          <button class="tab on" data-tab="anggota" type="button">
+            Anggota
+          </button>
+          <button class="tab" data-tab="prestasi" type="button">
+            Prestasi
+          </button>
+          <button class="tab" data-tab="karya" type="button">Karya</button>
+          <button class="tab" data-tab="galeri" type="button">Galeri</button>
+        </div>
+        <div class="adm-grid">
+          <div class="adm-panel">
+            <h3 id="adm-judul-form"></h3>
+            <form id="adm-form" autocomplete="off"></form>
+          </div>
+          <div class="adm-panel">
+            <h3>Daftar <span id="adm-jml"></span></h3>
+            <div id="adm-list" class="adm-list"></div>
+          </div>
+        </div>
+        <div class="adm-info">
+          <h3>Cara menayangkan data di situs</h3>
+          <ol>
+            <li>
+              Isi form lalu klik <b>Simpan</b>. Data tersimpan di peramban ini
+              saja (belum tampil di situs).
+            </li>
+            <li>
+              Klik <b>Unduh data untuk situs</b>. Akan terunduh
+              <code>data-anggota.js</code>, <code>data-prestasi.js</code>,
+              <code>data-karya.js</code>, dan <code>data-galeri.js</code>.
+            </li>
+            <li>
+              Ganti file-file tersebut di folder situs, lalu unggah ulang ke
+              hosting. Halaman Anggota, Prestasi, Galeri, dan Karya langsung
+              memakai data baru.
+            </li>
+          </ol>
+          <p class="adm-cat">
+            Catatan: data hanya ada di peramban ini sampai diunduh. Jika
+            berganti perangkat, unduh dulu atau gunakan satu perangkat yang
+            sama. Tombol Login bukan pengamanan sungguhan karena situs ini tidak
+            punya server.
+          </p>
+          <p>
+            <button class="btn-k" id="btn-unduh-anggota" type="button">
+              Unduh data-anggota.js
+            </button>
+            <button class="btn-k" id="btn-unduh-prestasi" type="button">
+              Unduh data-prestasi.js
+            </button>
+            <button class="btn-k" id="btn-unduh-karya" type="button">
+              Unduh data-karya.js
+            </button>
+            <button class="btn-k" id="btn-unduh-galeri" type="button">
+              Unduh data-galeri.js
+            </button>
+            <button class="btn-k merah" id="btn-reset" type="button">
+              Kembalikan ke data situs
+            </button>
+          </p>
+        </div>
+      </div>
+    </section>
+    <datalist id="dl-nama"></datalist>
+    <div class="toast" id="toast" role="status"></div>
+    <footer>
+      <div class="foot">
+        <div>
+          <h4>CSSMoRA UNNES</h4>
+          <p>
+            Wadah pengembangan dan pengabdian bagi mahasantri penerima beasiswa
+            PBSB di Universitas Negeri Semarang.
+          </p>
+        </div>
+        <div>
+          <h4>Beranda</h4>
+          <ul>
+            <li><a href="index.html#about">Tentang</a></li>
+            <li><a href="prestasi.html">Prestasi</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="karya.html">Karya Awardee</a></li>
+            <li><a href="sejarah.html">Sejarah</a></li>
+            <li></li>
+            <a href="anggota.html">Anggota</a>
+          </ul>
+        </div>
+        <div>
+          <h4>Ikuti Kami</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">TikTok</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copy">Copyright © 2026 CSSMoRA UNNES</div>
+    </footer>
+    <script src="data-anggota.js"></script>
+    <script src="data-prestasi.js"></script>
+    <script src="data-karya.js"></script>
+    <script src="data-galeri.js"></script>
+    <script src="script.js"></script>
+    <script src="admin.js"></script>
+  </body>
+</html>

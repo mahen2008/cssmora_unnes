@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#06382a" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      CSSMoRA UNNES — Community of Santri Scholars of Ministry of Religious
+      Affairs
+    </title>
+    <meta
+      name="description"
+      content="CSSMoRA UNNES adalah organisasi penerima beasiswa PBSB di Universitas Negeri Semarang."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="nav">
+      <a href="index.html" class="logo"
+        ><img src="foto/logo.png" alt="Logo CSSMoRA UNNES" /> CSSMoRA UNNES</a
+      >
+      <button class="burger" id="burger" aria-label="Menu">☰</button>
+      <nav id="menu">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="index.html#about">Tentang</a></li>
+          <li><a href="sejarah.html">Sejarah</a></li>
+          <li><a href="prestasi.html">Prestasi</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="karya.html">Karya Awardee</a></li>
+          <li><a href="anggota.html">Anggota</a></li>
+          <li><a href="login.html" class="nav-login">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home">
+      <div class="hero-in">
+        <div class="quote">“Loyalitas Tanpa Batas”</div>
+        <h1>CSSMORA UNNES</h1>
+        <p class="hero-sub">
+          Community of Santri Scholars of Ministry of Religious Affairs
+        </p>
+        <p>Universitas Negeri Semarang</p>
+        <a href="#about" class="btn">Tentang Kami</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <video
+        class="about-bg-video"
+        autoplay
+        loop
+        muted
+        playsinline
+        poster="foto/tentang.jpg"
+      >
+        <source src="vidio/profilcssmora.mp4" type="video/mp4" />
+      </video>
+      <div class="about-overlay"></div>
+      <div class="container">
+        <div class="about-center rv">
+          <span class="tag">Tentang Kami</span>
+          <h2>Awardee PBSB</h2>
+          <p>
+            Program Beasiswa Santri Berprestasi (PBSB) adalah program kolaborasi
+            Kementerian Agama dengan LPDP Kementerian Keuangan untuk
+            meningkatkan kualitas sumber daya manusia di bidang P3M dan
+            pendidikan berbasis pesantren.
+          </p>
+          <p>
+            CSSMoRA merupakan wadah bagi mahasantri penerima PBSB untuk
+            berkembang sebagai agen perubahan. CSSMoRA bergerak dalam bidang
+            sosial kepesantrenan dan memegang teguh Pancasila.
+          </p>
+          <p>
+            Di Universitas Negeri Semarang, CSSMoRA UNNES menjadi ruang
+            bertumbuh mahasantri untuk berkarya dan mengabdi.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="visi-misi">
+      <div class="container">
+        <span class="tag">Selaras dengan Visi CSSMoRA Nasional</span>
+        <h2 class="rv">Visi &amp; Misi</h2>
+        <div class="vm rv">
+          <div>
+            <h3>Visi</h3>
+            <p>
+              Terciptanya anggota CSSMoRA yang berorientasi pada PSDM,
+              pengembangan dan pemberdayaan pesantren serta pengabdian
+              masyarakat.
+            </p>
+          </div>
+          <div>
+            <h3>Misi</h3>
+            <ul>
+              <li>Mengamalkan Tri Dharma Perguruan Tinggi</li>
+              <li>Merawat persatuan dan kesatuan antar anggota</li>
+              <li>Membentuk kader dengan nilai-nilai dasar CSSMoRA</li>
+              <li>Mengembangkan bakat dan minat anggota</li>
+              <li>Mengembangkan jejaring organisasi</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sejarah">
+      <div class="container">
+        <span class="tag">Sejarah</span>
+        <h2 class="rv">Dedikasi dari Masa ke Masa</h2>
+        <p class="rv" style="color: var(--muted)">
+          Ganti data di bawah ini dengan sejarah dan ketua CSSMoRA UNNES yang
+          sebenarnya.
+        </p>
+        <div class="timeline">
+          <div class="tl rv">
+            <b>20XX</b><br />Berdirinya CSSMoRA UNNES<small
+              >[Isi cerita awal berdirinya organisasi]</small
+            >
+          </div>
+          <div class="tl rv">
+            <b>Sekarang</b><br />[Nama Ketua]<small
+              >[Program Studi &amp; Angkatan] · Kabinet [Nama Kabinet]</small
+            >
+          </div>
+        </div>
+
+        <p class="center">
+          <a class="btn" href="sejarah.html">Baca Sejarah Lengkap</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="divisi" style="background: var(--soft)">
+      <div class="container">
+        <span class="tag">Kabinet Saat Ini</span>
+        <h2 class="rv">Divisi &amp; Biro</h2>
+        <p class="rv" style="color: var(--muted)">
+          Pilar organisasi yang saling bersinergi mewujudkan tata kelola yang
+          profesional dan berkelanjutan. Klik tiap divisi untuk melihat
+          penjelasan dan anggotanya.
+        </p>
+        <div class="cards">
+          <button class="card dv rv" data-d="bph">
+            <div class="ic">👑</div>
+            <h3>BPH</h3>
+            <p>Badan Pengurus Harian pengarah organisasi.</p>
+            <span class="more">Lihat anggota →</span>
+          </button>
+          <button class="card dv rv" data-d="PSDM">
+            <div class="ic">📚</div>
+            <h3>PSDM</h3>
+            <p>Pengembangan akademik dan riset mahasantri.</p>
+            <span class="more">Lihat anggota →</span>
+          </button>
+          <button class="card dv rv" data-d="P3M">
+            <div class="ic">🕌</div>
+            <h3>P3M</h3>
+            <p>Kajian dan penguatan nilai kepesantrenan.</p>
+            <span class="more">Lihat anggota →</span>
+          </button>
+          <button class="card dv rv" data-d="PSDE">
+            <div class="ic">🤝</div>
+            <h3>PSDE</h3>
+            <p>Kegiatan sosial dan pemberdayaan masyarakat.</p>
+            <span class="more">Lihat anggota →</span>
+          </button>
+          <button class="card dv rv" data-d="Kominfo">
+            <div class="ic">🎨</div>
+            <h3>Kominfo</h3>
+            <p>Wadah seni, olahraga, dan kreativitas.</p>
+            <span class="more">Lihat anggota →</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="prestasi">
+      <div class="container">
+        <span class="tag">Prestasi</span>
+        <h2 class="rv">Jejak Langkah Prestasi</h2>
+        <p class="rv" style="color: var(--muted)">
+          Jejak karya dan prestasi mahasantri CSSMoRA UNNES yang memadukan
+          kecerdasan, integritas, dan semangat kesantrian.
+        </p>
+        <div class="gal" id="prestasi-ringkas"></div>
+        <p class="center">
+          <a class="btn" href="prestasi.html">Lihat Semua Prestasi</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery-hero">
+      <div class="gallery-stack-bg" id="galeri-stack-bg">
+        <div class="stack-card sc-1">
+          <img src="foto/galeri/g1.jpg" alt="Dokumentasi 1" loading="lazy" />
+        </div>
+        <div class="stack-card sc-2">
+          <img src="foto/galeri/g2.jpg" alt="Dokumentasi 2" loading="lazy" />
+        </div>
+        <div class="stack-card sc-3">
+          <img src="foto/galeri/g3.jpg" alt="Dokumentasi 3" loading="lazy" />
+        </div>
+        <div class="stack-card sc-4">
+          <img src="foto/galeri/g4.jpg" alt="Dokumentasi 4" loading="lazy" />
+        </div>
+        <div class="stack-card sc-5">
+          <img src="foto/galeri/g5.jpg" alt="Dokumentasi 5" loading="lazy" />
+        </div>
+        <div class="stack-card sc-6">
+          <img src="foto/galeri/g6.jpg" alt="Dokumentasi 6" loading="lazy" />
+        </div>
+        <div class="stack-card sc-7">
+          <img src="foto/galeri/g7.jpg" alt="Dokumentasi 7" loading="lazy" />
+        </div>
+        <div class="stack-card sc-8">
+          <img src="foto/galeri/g8.jpg" alt="Dokumentasi 8" loading="lazy" />
+        </div>
+      </div>
+      <div class="gallery-hero-overlay"></div>
+      <div class="container">
+        <div class="gallery-center-card rv">
+          <span class="tag">Galeri Dokumentasi</span>
+          <h2>Mengabadikan Esensi Renjana</h2>
+          <p>
+            Setiap bingkai adalah cerita tentang semangat yang terus bertumbuh,
+            merawat kebersamaan, dan jejak nyata dedikasi mahasantri CSSMoRA
+            UNNES.
+          </p>
+          <div class="gallery-btn-wrap">
+            <a class="btn" href="galeri.html">Lihat Galeri Lengkap</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="statistik">
+      <div class="container">
+        <span class="tag">Awardee</span>
+        <h2 class="rv">Lintas Disiplin, Membawa Perubahan</h2>
+        <div class="stats">
+          <div class="stat rv"><b data-count="29">0</b>Mahasiswa Aktif</div>
+          <div class="stat rv"><b data-count="0">0</b>Alumni</div>
+          <div class="stat rv">
+            <b data-count="10">0</b>Program &amp; Agenda
+          </div>
+        </div>
+        <ul class="dept">
+          <li>Pendidikan Matematika <b>0</b></li>
+          <li>Pendidikan Bahasa Arab <b>0</b></li>
+          <li>Ilmu Hukum <b>0</b></li>
+          <li>Teknik Informatika <b>0</b></li>
+          <li>Biologi <b>0</b></li>
+          <li>Pendidikan Agama Islam <b>0</b></li>
+        </ul>
+        <p class="center">
+          <a class="btn" href="karya.html">Lihat Karya Awardee</a>
+        </p>
+        <p
+          style="color: var(--muted); font-size: 0.85rem; margin-top: 12px"
+        ></p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="foot">
+        <div>
+          <h4>CSSMoRA UNNES</h4>
+          <p>
+            Wadah pengembangan dan PSDE bagi mahasantri penerima beasiswa PBSB
+            di Universitas Negeri Semarang.
+          </p>
+        </div>
+        <div>
+          <h4>Beranda</h4>
+          <ul>
+            <li><a href="index.html#about">Tentang</a></li>
+            <li><a href="prestasi.html">Prestasi</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="karya.html">Karya Awardee</a></li>
+            <li><a href="sejarah.html">Sejarah</a></li>
+            <li></li>
+            <a href="anggota.html">Anggota</a>
+          </ul>
+        </div>
+        <div>
+          <h4>Ikuti Kami</h4>
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/cssmora.unnes/">Instagram</a>
+            </li>
+            <li><a href="https://www.tiktok.com/@cssmora.unnes">TikTok</a></li>
+            <li>
+              <a href="https://www.linkedin.com/company/cssmora-nasional/"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a href="https://www.facebook.com/share/1FcjisoGN5/">Facebook</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copy">Copyright © 2026 CSSMoRA UNNES</div>
+    </footer>
+
+    <div
+      class="mdl"
+      id="mdl"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="mdl-t"
+    >
+      <div class="mdl-box">
+        <button class="mdl-x" aria-label="Tutup">✕</button>
+        <div class="mdl-c"></div>
+      </div>
+    </div>
+    <script>
+      // ===== EDIT DATA DIVISI DI SINI (nama, program kerja, anggota & foto) =====
+      window.DIVISI = [
+        {
+          id: "bph",
+          nama: "Badan Pengurus Harian",
+          sub: "Kabinet [Nama Kabinet]",
+          ic: "👑",
+          desc: "BPH memimpin dan mengarahkan seluruh kegiatan CSSMoRA UNNES serta menjaga sinergi antar divisi.",
+          proker: [
+            "Rapat koordinasi dan evaluasi kabinet",
+            "Penyusunan program kerja tahunan",
+            "Pelantikan dan pembinaan pengurus",
+          ],
+          anggota: [
+            {
+              nama: "[Nama Ketua]",
+              jabatan: "Ketua",
+              foto: "foto/anggota/bph-1.jpg",
+            },
+            {
+              nama: "[Nama Wakil Ketua]",
+              jabatan: "Wakil Ketua",
+              foto: "foto/anggota/bph-2.jpg",
+            },
+            {
+              nama: "[Nama Sekretaris]",
+              jabatan: "Sekretaris",
+              foto: "foto/anggota/bph-3.jpg",
+            },
+            {
+              nama: "[Nama Bendahara]",
+              jabatan: "Bendahara",
+              foto: "foto/anggota/bph-4.jpg",
+            },
+          ],
+        },
+        {
+          id: "PSDM",
+          nama: "Divisi PSDM",
+          sub: "Kabinet [Nama Kabinet]",
+          ic: "📚",
+          desc: "Mengembangkan kemampuan akademik dan riset mahasantri melalui pelatihan, lomba, dan diskusi ilmiah.",
+          proker: [
+            "Pelatihan karya tulis ilmiah",
+            "Pendampingan lomba dan PKM",
+            "Diskusi PSDM rutin",
+          ],
+          anggota: [
+            {
+              nama: "[Nama Kepala Divisi]",
+              jabatan: "Kepala Divisi",
+              foto: "foto/anggota/PSDM-1.jpg",
+            },
+            {
+              nama: "[Nama Sekretaris Divisi]",
+              jabatan: "Sekretaris Divisi",
+              foto: "foto/anggota/PSDM-2.jpg",
+            },
+            {
+              nama: "[Nama Anggota]",
+              jabatan: "Anggota",
+              foto: "foto/anggota/PSDM-3.jpg",
+            },
+            {
+              nama: "[Nama Anggota]",
+              jabatan: "Anggota",
+              foto: "foto/anggota/PSDM-4.jpg",
+            },
+          ],
+        },
+        {
+          id: "P3M",
+          nama: "Divisi P3M",
+          sub: "Kabinet [Nama Kabinet]",
+          ic: "🕌",
+          desc: "Menjaga dan menguatkan nilai kepesantrenan lewat kajian dan kegiatan ibadah bersama.",
+          proker: [
+            "Kajian kitab rutin",
+            "Peringatan hari besar Islam",
+            "Mentoring P3M",
+          ],
+          anggota: [
+            {
+              nama: "[Nama Kepala Divisi]",
+              jabatan: "Kepala Divisi",
+              foto: "foto/anggota/P3M-1.jpg",
+            },
+            {
+              nama: "[Nama Sekretaris Divisi]",
+              jabatan: "Sekretaris Divisi",
+              foto: "foto/anggota/P3M-2.jpg",
+            },
+            {
+              nama: "[Nama Anggota]",
+              jabatan: "Anggota",
+              foto: "foto/anggota/P3M-3.jpg",
+            },
+            {
+              nama: "[Nama Anggota]",
+              jabatan: "Anggota",
+              foto: "foto/anggota/P3M-4.jpg",
+            },
+          ],
+        },
+        {
+          id: "PSDE",
+          nama: "Divisi PSDE Masyarakat",
+          sub: "Kabinet [Nama Kabinet]",
+          ic: "🤝",
+          desc: "Menggerakkan kegiatan sosial dan pemberdayaan masyarakat serta pesantren.",
+          proker: [
+            "Bakti sosial",
+            "Pengajaran di pesantren dan sekolah",
+            "Kegiatan peduli lingkungan",
+          ],
+          anggota: [
+            {
+              nama: "[Nama Kepala Divisi]",
+              jabatan: "Kepala Divisi",
+              foto: "foto/anggota/PSDE-1.jpg",
+            },
+            {
+              nama: "[Nama Sekretaris Divisi]",
+              jabatan: "Sekretaris Divisi",
+              foto: "foto/anggota/PSDE-2.jpg",
+            },
+            {
+              nama: "[Nama Anggota]",
+              jabatan: "Anggota",
+              foto: "foto/anggota/PSDE-3.jpg",
+            },
+            {
+              nama: "[Nama Anggota]",
+              jabatan: "Anggota",
+              foto: "foto/anggota/PSDE-4.jpg",
+            },
+          ],
+        },
+        {
+          id: "Kominfo",
+          nama: "Divisi Minat dan Bakat",
+          sub: "Kabinet [Nama Kabinet]",
+          ic: "🎨",
+          desc: "Menjadi wadah pengembangan bakat dan minat di bidang seni, olahraga, dan kreativitas.",
+          proker: [
+            "Turnamen olahraga antar angkatan",
+            "Pentas seni",
+            "Pelatihan keterampilan",
+          ],
+          anggota: [
+            {
+              nama: "[Nama Kepala Divisi]",
+              jabatan: "Kepala Divisi",
+              foto: "foto/anggota/Kominfo-1.jpg",
+            },
+            {
+              nama: "[Nama Sekretaris Divisi]",
+              jabatan: "Sekretaris Divisi",
+              foto: "foto/anggota/Kominfo-2.jpg",
+            },
+            {
+              nama: "[Nama Anggota]",
+              jabatan: "Anggota",
+              foto: "foto/anggota/Kominfo-3.jpg",
+            },
+            {
+              nama: "[Nama Anggota]",
+              jabatan: "Anggota",
+              foto: "foto/anggota/Kominfo-4.jpg",
+            },
+          ],
+        },
+        {
+          id: "media",
+          nama: "Divisi Media dan Informasi",
+          sub: "Kabinet [Nama Kabinet]",
+          ic: "📣",
+          desc: "Mengelola publikasi, desain, dan dokumentasi seluruh kegiatan organisasi.",
+          proker: [
+            "Konten media sosial",
+            "Dokumentasi foto dan video",
+            "Desain publikasi kegiatan",
+          ],
+          anggota: [
+            {
+              nama: "[Nama Kepala Divisi]",
+              jabatan: "Kepala Divisi",
+              foto: "foto/anggota/media-1.jpg",
+            },
+            {
+              nama: "[Nama Sekretaris Divisi]",
+              jabatan: "Sekretaris Divisi",
+              foto: "foto/anggota/media-2.jpg",
+            },
+            {
+              nama: "[Nama Anggota]",
+              jabatan: "Anggota",
+              foto: "foto/anggota/media-3.jpg",
+            },
+            {
+              nama: "[Nama Anggota]",
+              jabatan: "Anggota",
+              foto: "foto/anggota/media-4.jpg",
+            },
+          ],
+        },
+        {
+          id: "jejaring",
+          nama: "Divisi Jejaring dan Kemitraan",
+          sub: "Kabinet [Nama Kabinet]",
+          ic: "🌐",
+          desc: "Membangun relasi dengan CSSMoRA daerah lain, alumni, dan lembaga mitra.",
+          proker: [
+            "Silaturahmi antar CSSMoRA",
+            "Kerja sama dengan alumni",
+            "Kunjungan dan studi banding",
+          ],
+          anggota: [
+            {
+              nama: "[Nama Kepala Divisi]",
+              jabatan: "Kepala Divisi",
+              foto: "foto/anggota/jejaring-1.jpg",
+            },
+            {
+              nama: "[Nama Sekretaris Divisi]",
+              jabatan: "Sekretaris Divisi",
+              foto: "foto/anggota/jejaring-2.jpg",
+            },
+            {
+              nama: "[Nama Anggota]",
+              jabatan: "Anggota",
+              foto: "foto/anggota/jejaring-3.jpg",
+            },
+            {
+              nama: "[Nama Anggota]",
+              jabatan: "Anggota",
+              foto: "foto/anggota/jejaring-4.jpg",
+            },
+          ],
+        },
+      ];
+    </script>
+    <div
+      class="mdl"
+      id="mdl-p"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Detail prestasi"
+    >
+      <div class="mdl-box">
+        <button class="mdl-x" aria-label="Tutup">✕</button>
+        <div class="mdl-c"></div>
+      </div>
+    </div>
+    <div
+      class="mdl"
+      id="mdl-g"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Detail kegiatan galeri"
+    >
+      <div class="mdl-box">
+        <button class="mdl-x" aria-label="Tutup">✕</button>
+        <div class="mdl-c"></div>
+      </div>
+    </div>
+    <script src="data-prestasi.js"></script>
+    <script src="data-galeri.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
